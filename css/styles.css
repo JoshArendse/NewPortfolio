@@ -1,0 +1,136 @@
+/* variables */
+:root{
+    --theme: #f73736;
+    --font-color: aliceblue;
+    --font-color2: rgba(240, 248, 255, 0.8);
+    --font-color3: rgba(0, 0, 0, 0.8);
+    --bold: 700;
+    --normal: 400;
+    --layout: 1fr 1fr 1fr 1fr;
+    --layout2: 1fr 1fr;
+    --width: 100%;
+    --shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.8);
+    --AA: antialiased;
+    --font: 'Ubuntu';
+    --pad: 50px 0;
+    --pad2: 10px 0;
+}
+
+/* general color and theme */
+*{
+    margin: 0;
+}
+
+h1{
+    color: var(--theme);
+    font-family: var(--font);
+}
+
+p{
+    font-family: var(--font);
+    font-size: 20px;
+    color: var(--font-color3);
+    padding: var(--pad2);
+}
+
+a{
+    text-decoration: none;
+    color: var(--theme);
+}
+a:hover{
+    opacity: 0.8;
+}
+
+.theme-switch {
+    display: grid;
+    position: relative;
+    margin: 0;
+    padding: var(--pad);
+    justify-items: center;
+    grid-template-columns: var(--layout);
+}
+
+.theme-switch span{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: var(--shadow)
+}
+.theme-switch span:active{
+    transform: scale(0.9);
+    transition: all 100ms ease-in-out;
+}
+
+/* intro banner */
+
+#banner {
+    width: var(--width);
+    display: grid;
+    grid-template-columns: var(--layout2);
+    height: 800px;
+}
+
+#banner-grid1 {
+    background: var(--theme);
+    padding: 50px 50px;
+}
+
+#banner-grid2{
+background-image: url(../img/Josh.JPG);
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+h2, h3{
+    -webkit-font-smoothing: var(--AA);
+    font-family: var(--font);
+}
+
+i{
+    color: var(--font-color);
+    padding-left: 5px;
+    cursor: pointer;
+}
+i:hover{
+    opacity: 0.8;
+}
+
+h2{
+    color: var(--font-color);
+    font-weight: var(--bold);
+    font-size: 32px;
+}
+
+h3{
+    color: var(--font-color2);
+    font-weight: var(--normal);
+}
+
+hr{
+    width: 30%;
+    opacity: 0.5;
+}
+
+/* experience section */
+
+.experience{
+    padding: var(--pad);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.timeline{
+    padding: var(--pad);
+    margin: 0 25%;
+    justify-self: center;
+}
+
+.timeline img{
+    transform: rotate(-53deg);
+    width: 50px;
+    padding-top: 20px;
+}
+
+
+
