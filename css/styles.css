@@ -161,8 +161,7 @@ hr{
 /* skillset */
 
 .parallax{
-    margin: 40px 100px;
-    height: 80vh;
+    height: 70vh;
     background: url(../img/setup.jpeg) no-repeat center;
     background-attachment: fixed;
     background-size: cover;
