@@ -16,6 +16,7 @@
     --pad2: 10px 0;
     --box: 50px 50px;
     --speed: all 100ms ease-in-out;
+    --speed2: all 300ms ease-in-out;
 }
 
 /* general */
@@ -174,16 +175,20 @@ h3{
 .projects{
     height: 50vh;
     grid-gap: 20px;
-    background: var(--theme);
-    opacity: 0.3;
     display: grid;
     padding: var(--box);
     grid-template-columns: var(--layout);
+    transition: var(--speed2);
 }
 
-.projects div{
-    background: white;
+#page1, #page2, #page3{
+    background-size: cover;
+    box-shadow: var(--shadow);
+    cursor: pointer;
 }
+#page1{background: url(../img/Outbound.PNG) center no-repeat}
+#page2{background: url(../img/wordpress-portfolio.PNG) center no-repeat}
+#page3{background: url() center no-repeat}
 
 .active{
     height: 100%;
