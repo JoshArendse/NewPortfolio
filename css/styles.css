@@ -14,6 +14,7 @@
     --font: 'Ubuntu';
     --pad: 50px 0;
     --pad2: 10px 0;
+    --pad3: 100px 50px;
     --box: 50px 50px;
     --speed: all 100ms ease-in-out;
     --speed2: all 300ms ease-in-out;
@@ -98,13 +99,13 @@ i:hover{
 h2{
     color: var(--font-color);
     font-weight: var(--bold);
-    font-size: 1.5vw;
+    font-size: 32px;
 }
 
 h3{
     color: var(--font-color2);
     font-weight: var(--normal);
-    font-size: 1.2vw;
+    font-size: 22px;
 }
 
 #pop-up{
@@ -193,14 +194,26 @@ h3{
 .active{
     height: 100%;
     width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    transition: var(--speed2);
+    overflow: hidden;
 }
 
-.steekhomweg{
+.steekhomweg, .text, .close{
     display: none;
 }
 
 .block {
     padding: 0;
-    height: 65vh;
+    height: 60vh;
     grid-template-columns: 1fr;
 }
+
+.show-text{
+    display: inherit;
+}
+
+.overlay{
+    padding: var(--pad3);
+}
+

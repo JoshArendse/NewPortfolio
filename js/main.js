@@ -27,30 +27,31 @@ window.addEventListener('click', function(c){
 })
 
 // page concept
-
 $(document).ready(function(){
     $('#page1').click(function(){
         $('.projects').toggleClass('block');
-        $('#page1').toggleClass('active');
-        $('#page2').toggleClass('steekhomweg');
-        $('#page3').toggleClass('steekhomweg');
+        $('.text, .close').toggleClass('show-text');
+        $('#page1, .overlay').toggleClass('active');
+        $('#page2, #page3').toggleClass('steekhomweg');
     })
 });
 
 $(document).ready(function(){
   $('#page2').click(function(){
       $('.projects').toggleClass('block');
-      $('#page2').toggleClass('active');
-      $('#page1').toggleClass('steekhomweg');
-      $('#page3').toggleClass('steekhomweg');
+      $('.text, .close').toggleClass('show-text');
+      $('#page2, .overlay').toggleClass('active');
+      $('#page1, #page3').toggleClass('steekhomweg');
   })
 });
 
 $(document).ready(function(){
   $('#page3').click(function(){
       $('.projects').toggleClass('block');
-      $('#page3').toggleClass('active');
-      $('#page2').toggleClass('steekhomweg');
-      $('#page1').toggleClass('steekhomweg');
+      $('.text, .close').toggleClass('show-text');
+      $('#page3, .overlay').toggleClass('active');
+      $('#page2, #page1').toggleClass('steekhomweg');
   })
 });
+
+
