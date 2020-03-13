@@ -11,7 +11,7 @@
     --width: 100vw;
     --shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.8);
     --AA: antialiased;
-    --font: 'Ubuntu';
+    --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --pad: 50px 0;
     --pad2: 10px 0;
     --pad3: 100px 50px;
@@ -24,6 +24,7 @@
 
 *{
     margin: 0;
+    line-height: 1.2em;
 }
 
 h1{
