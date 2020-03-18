@@ -5,7 +5,7 @@ let root = document.querySelector(':root');
 
 switches.forEach((color) => {
     color.addEventListener('click', (e) => {
-        root.style.setProperty('--theme', e.target.style.background);
+        root.style.setProperty('--theme', e.target.style.backgroundColor);
     })
 });
 

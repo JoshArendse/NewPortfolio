@@ -30,6 +30,8 @@
 h1{
     color: var(--theme);
     font-family: var(--font);
+    font-size: 30px;
+    letter-spacing: 4px;
 }
 
 p{
@@ -47,7 +49,7 @@ a:hover{
     opacity: 0.8;
 }
 
-button{
+button, input[type=submit]{
     text-decoration: none;
     background: var(--theme);
     border: 2px solid var(--font-color);
@@ -58,7 +60,7 @@ button{
     transition: var(--speed);
 }
 
-button:hover{
+button:hover, input[type=submit]:hover{
     cursor: pointer;
     background: var(--font-color);
     color: var(--theme);
@@ -83,7 +85,7 @@ button:hover{
     background-size: cover;
 }
 
-h2, h3{
+h2, h3, input::placeholder, textarea::placeholder{
     -webkit-font-smoothing: var(--AA);
     font-family: var(--font);
 }
@@ -100,13 +102,13 @@ i:hover{
 h2{
     color: var(--font-color);
     font-weight: var(--bold);
-    font-size: 32px;
+    font-size: 28px;
 }
 
 h3{
     color: var(--font-color2);
     font-weight: var(--normal);
-    font-size: 22px;
+    font-size: 18px;
 }
 
 #pop-up{
@@ -223,5 +225,36 @@ h3{
 
 #contact{
     height: 50vh;
+    padding: 0;
+    border: none;
 }
+
+.overlay2{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(240, 248, 255, 0.8);
+    padding: var(--pad2);
+}
+
+.copy{
+    text-align: center;
+    padding: 30px 0;
+}
+
+.contact-grid{
+    padding-top: 50px;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: var(--layout2);
+}
+
+input, textarea{
+    margin: 3px 0;
+    text-decoration: none;
+    width: 400px;
+    resize: none;
+    padding: 10px;
+    border: none;
+}
+
 

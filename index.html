@@ -33,10 +33,10 @@
 
     <div id="pop-up">
         <div id="theme-switch" style="text-align: center;">
-            <span style="background: #f73736"></span>
-            <span style="background: #33b44a"></span>
-            <span style="background: #2456ef"></span>
-            <span style="background: #ff8b18"></span>
+            <span style="background-color: #f73736"></span>
+            <span style="background-color: #33b44a"></span>
+            <span style="background-color: #4456ef"></span>
+            <span style="background-color: #ff9831"></span>
         </div>
     </div>
     
@@ -76,7 +76,7 @@
     <!-- skillset -->
 
     <div class="experience" style="text-align: center; background: var(--theme);">
-        <h2>SKILLSET</h2>
+        <h2 style="letter-spacing: 4px;">SKILLSET</h2>
     </div>
     
     <div class="parallax1"></div>
@@ -113,8 +113,22 @@
 
     <!-- contact -->
 
-    <div id="contact" class="experience" style="background: var(--theme);">
-        
+    <div id="contact" class="experience" style="background-color: var(--theme);">
+        <div class="overlay2">
+            <div class="contact-grid" style="justify-items: right;">
+                <form action="mailto:jarendse4507@gmail.com" method="post">
+                    <input type="text" placeholder="Name"><br>
+                    <input type="text" placeholder="Subject"><br>
+                    <textarea placeholder="Message" name="message" id="message" cols="30" rows="10"></textarea><br>
+                    <input type="submit" value="Submit" style="width: 420px;">
+                </form>
+            </div>
+
+            <div class="contact-grid"></div>
+        </div>
+    </div>
+    <div class="copy" style="background-color: var(--theme);">
+        <h3>Josh Arendse &copy; 2020 All Rights Reserved</h3>
     </div>
 
     <script src="js/main.js"></script>
