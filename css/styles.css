@@ -90,15 +90,6 @@ h2, h3, input::placeholder, textarea::placeholder{
     font-family: var(--font);
 }
 
-i{
-    color: var(--font-color);
-    padding-left: 5px;
-    cursor: pointer;
-}
-i:hover{
-    opacity: 0.8;
-}
-
 h2{
     color: var(--font-color);
     font-weight: var(--bold);
@@ -232,8 +223,10 @@ h3{
 .overlay2{
     height: 100%;
     width: 100%;
-    background-color: rgba(240, 248, 255, 0.8);
-    padding: var(--pad2);
+    background-color: rgba(240, 248, 255, 0.7);
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: var(--layout2);
 }
 
 .copy{
@@ -241,11 +234,15 @@ h3{
     padding: 30px 0;
 }
 
-.contact-grid{
+.contact-grid1{
     padding-top: 50px;
-    display: grid;
-    grid-gap: 50px;
-    grid-template-columns: var(--layout2);
+    justify-self: right;
+}
+
+.contact-grid2{
+    padding-top: 50px;
+    justify-self: left;
+    text-align: left;
 }
 
 input, textarea{
@@ -257,4 +254,14 @@ input, textarea{
     border: none;
 }
 
+i{
+    cursor: pointer;
+}
+i:hover, hr{
+    opacity: 0.8;
+}
+
+.hr{
+    border: 1px solid var(--font-color);
+}
 
