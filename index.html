@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -17,7 +18,7 @@
         <div id="banner-grid1">
             <h2>Josh Arendse</h2>
             <h3>Junior Web Developer</h3><br><br>
-            <h3>A hard working, driven and technically minded guy. <br> I'm easy to get along with, work well within a team <br> and I'm passionate about coding. So far my deving <br> journey has blessed me with both learnings and <br> experience in both front-end and back-end works, <br> leaving me with a desire to constantly improve my knowledge <br> and strive towards becoming an efficient full-stack developer.</h3><br>
+            <h3>A hard working, driven and technically minded guy. <br> I'm easy to get along with, work well within a team <br> and I'm passionate about coding. So far my deving <br> journey has blessed me with both learnings and <br> experience in both front-end and back-end works, <br> leaving me with a desire to constantly improve my knowledge <br> and strive towards becoming an efficient full-stack developer.</h3><br><br>
 
             <button id="button">Change Theme</button>
 
@@ -72,7 +73,7 @@
     <!-- skillset -->
 
     <div class="experience" style="text-align: center; background: var(--theme);">
-        <h2 style="letter-spacing: 4px;">SKILLSET</h2>
+        <h2>SKILLSET</h2>
     </div>
     
     <div class="parallax1"></div>
@@ -87,19 +88,19 @@
     </div>
 
     <div class="projects">
-        <div id="page1" data-aos="fade-down" data-aos-duration="1200">
+        <div id="page1" data-aos="fade-left" data-aos-duration="1200">
             <div class="overlay">
                 <h3 class="text">I was fortunate enough to work on the rebuilding of the <a href="https://digioutbound.com/" target="_blank">DigiOutbound</a> website <br>(Along with 2 other colleagues) in Kentico CMS, <br>and the website is now being hosted and used by DigiOutsource.</h3><br>
                 <button class="close" id="button">Close</button>
             </div>
         </div>
-        <div id="page2" data-aos="fade-down" data-aos-duration="1500">
+        <div id="page2" data-aos="fade-left" data-aos-duration="1500">
             <div class="overlay">
                 <h3 class="text"> One of my more 'fun' projects to work on, a <a href="https://josh4507.wordpress.com/" target="_blank">Wordpress Portfolio</a><br>I created during some downtime at college. Getting used to the system <br>gave me various ideas for layouts and concepts</h3><br>
                 <button class="close" id="button">Close</button>
             </div>
         </div>
-        <div id="page3" data-aos="fade-down" data-aos-duration="1800">
+        <div id="page3" data-aos="fade-left" data-aos-duration="1800">
             <div class="overlay">
                 <h3 class="text">This mini-game is part of a Vue.js online tutorial ive been <br>self-studying and have made some refinements to it as far <br>as functionality and UX is concnerned to give it a more <a href="https://josharendse.github.io/Punch-Game/index.html" target="_blank">game</a>-like feel.<br> (only works for desktop at the moment, mobile update to follow soon).</h3><br>
                 <button class="close" id="button">Close</button>
@@ -144,6 +145,14 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+            var maxWidth = 1079;
+
+            if(window.innerWidth < maxWidth){
+                AOS.init({
+                    disable: true
+                })
+            }
+        
     </script>
 </body>
 </html>

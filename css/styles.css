@@ -31,7 +31,6 @@ h1{
     color: var(--theme);
     font-family: var(--font);
     font-size: 30px;
-    letter-spacing: 4px;
 }
 
 p{
@@ -156,10 +155,12 @@ h3{
 /* skillset //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .parallax1, .parallax2, .parallax3, .parallax4{
-    height: 100vh;
+    height: 70vh;
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
 }
+
 
 .parallax1{background-image: url(../img/basic\ set.jpg)}
 .parallax2{background-image: url(../img/php.png)}
@@ -215,7 +216,7 @@ h3{
 /* contact ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 #contact{
-    height: 50vh;
+    height: 500px;
     padding: 0;
     border: none;
 }
