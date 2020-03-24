@@ -15,7 +15,7 @@
     --pad: 50px 0;
     --pad2: 10px 0;
     --pad3: 100px 50px;
-    --box: 50px 50px;
+    --box: 50px;
     --speed: all 100ms ease-in-out;
     --speed2: all 300ms ease-in-out;
 }
@@ -71,7 +71,7 @@ button:hover, input[type=submit]:hover{
     max-width: var(--width);
     display: grid;
     grid-template-columns: var(--layout2);
-    height: 51vw;
+    height: 100vh;
 }
 
 #banner-grid1 {
@@ -159,6 +159,7 @@ h3{
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 
@@ -209,8 +210,13 @@ h3{
     display: inherit;
 }
 
-.overlay{
+.text{
     padding: var(--pad3);
+    padding-bottom: 0;
+}
+
+.close{
+    margin-left: 50px;
 }
 
 /* contact ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -253,6 +259,10 @@ input, textarea{
     resize: none;
     padding: 10px;
     border: none;
+}
+
+input[type=submit]{
+    width: 420px;
 }
 
 i{

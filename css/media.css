@@ -1,31 +1,96 @@
-@media screen and (max-width: 1079px){
+/* tablet queries */
 
-    /* intro-banner queries////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+@media screen and (max-width: 1152px){
+
+    /* intro-banner ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
     #banner{
         grid-template-columns: 1fr;
-        height: 100%;
+        grid-template-rows: 1fr 1fr;
+        height: 190vh;
     }
 
     #banner-grid2{
-        display: none;
+        background-position: center;
     }
 
     #theme-switch{
-        width: 200px;
-        height: 200px;
-        margin: 100px auto auto 70%;
+        width: 280px;
+        height: 280px;
     }
 
-    /* projects queries////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+    /* projects //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
     .projects{
         height: 100vh;
         grid-template-columns: 1fr;
     }
+
+    /* contact ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+    #contact{
+        height: auto;
+    }
+
+    .overlay2{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .contact-grid1, .contact-grid2{
+        justify-self: center;
+    }
 }
 
-@media screen and (max-width: 799px){
+/* mobile queries */
+
+@media screen and (max-width: 800px){
+
+    #theme-switch{
+        width: 250px;
+        height: 250px;
+    }
+
+    /* skills /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+    .parallax2, .parallax4{
+        background-size: 960px 540px;
+        background-attachment: scroll;
+    }
+
+    
+}
+
+@media screen and (max-width: 640px){
+
+    #banner{
+        height: 175vh;
+    }
+
     .timeline{
         margin: 0 10%;
+    }
+
+    .projects{
+        padding: 10px;
+    }
+
+    .parallax2, .parallax4{
+        background-size: 854px 520px;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    .overlay2{
+        grid-gap: 20px;
+    }
+
+    input, textarea{
+        width: 320px;
+    }
+
+    input[type=submit]{
+        width: 340px;
     }
 }
