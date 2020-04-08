@@ -1,7 +1,7 @@
 // change theme color
 
 let switches = document.querySelectorAll('#theme-switch span');
-let root = document.querySelector(':root');
+let root = document.querySelector('body');
 
 switches.forEach((color) => {
     color.addEventListener('click', (e) => {

@@ -1,0 +1,331 @@
+@import "variables";
+@import "mixins";
+
+// general styles //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+*{
+    -webkit-font-smoothing: $AA;
+    margin: 0;
+    line-height: 1.2em;
+    font-family: $font;
+}
+
+button, input[type=submit]{
+    @include button;
+
+    &:hover{
+        @include buttonhover;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: var(--theme);
+
+    &:hover{
+        opacity: 0.8;
+    }
+}
+
+p{
+    font-size: 20px;
+    color: $font-color3;
+    padding: $pad2;
+}
+
+h1{
+    color: var(--theme);
+    font-size: 30px;
+}
+
+// intro banner ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#banner {
+    height: 100vh;
+    max-width: $width;
+    @include grid;
+
+    @include query(1152px){
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 190vh;
+    }
+
+    @include query(640px){
+        height: 175vh;
+    }
+
+    #banner-grid1 {
+        background: var(--theme);
+        padding: $box;
+
+        h2{
+            color: $font-color;
+            font-weight: $bold;
+            font-size: 28px;
+        }
+        
+        h3{
+            @include h3;
+        }
+    }
+    
+    #banner-grid2{
+        background: url(../img/Josh.JPG) no-repeat;
+        background-size: cover;
+        @include query(1152px){
+            background-position: center;
+        }
+    }
+}
+
+#pop-up{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0,0,0,0.1);
+
+    #theme-switch {
+        @include grid;
+        background-color: #f1f1f1;
+        width: 20vw;
+        height: 20vw;
+        margin: 10% auto;
+
+        @include query(1152px){
+            width: 280px;
+            height: 280px;
+        }
+
+        @include query(800px){
+            width: 250px;
+            height: 250px;
+        }
+
+        span{
+            width: 100%;
+            cursor: pointer;
+            box-shadow: $shadow;
+            z-index: 2;
+
+            &:active{
+                transform: scale(0.9);
+                transition: $speed;
+            }
+        }
+    }
+}
+
+// experience and education section ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.experience{
+    padding: $pad;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.timeline{
+    padding: $pad;
+    margin: 0 25%;
+    justify-self: center;
+
+    @include query(640px){
+        margin: 0 10%;
+    }
+
+    img{
+        transform: rotate(-53deg);
+        width: 50px;
+        padding-top: 20px;
+    }
+}
+
+// skillset ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#skillset{
+    background: var(--theme);
+    h2{
+        color: $font-color
+    }
+}
+
+.parallax1, .parallax2, .parallax3, .parallax4{
+    height: 70vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.parallax1{background-image: url(../img/basic\ set.jpg)}
+.parallax2{background-image: url(../img/php.png)}
+.parallax3{background-image: url(../img/wordpress.png)}
+.parallax4{background-image: url(../img/vuejq.jpg)}
+
+.parallax2, .parallax4{
+    @include query(800px){
+        background-size: 960px 540px;
+        background-attachment: scroll;
+    }
+
+    @include query(640px){
+        background-size: 854px 520px;
+    }
+}
+
+// projects ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.projects{
+    height: 65vh;
+    grid-gap: 20px;
+    display: grid;
+    padding: $box;
+    grid-template-columns: $layout;
+    transition: $speed2;
+
+    @include query(1152px){
+        height: 100vh;
+        grid-template-columns: 1fr;
+    }
+
+    @include query(640px){
+        padding: 10px;
+    }
+
+    h3{
+        @include h3;
+    }
+}
+
+#page1, #page2, #page3{
+    background-size: cover;
+    box-shadow: $shadow;
+    cursor: pointer;
+}
+#page1{background: url(../img/Outbound.PNG) center no-repeat}
+#page2{background: url(../img/wordpress-portfolio.PNG) center no-repeat}
+#page3{background: url(../img/punch.PNG) center no-repeat}
+
+.active{
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    transition: $speed2;
+    overflow: hidden;
+}
+
+.steekhomweg, .text, .close{
+    display: none;
+}
+
+.block {
+    padding: 0;
+    height: 80vh;
+    grid-template-columns: 1fr;
+}
+
+.show-text{
+    display: inherit;
+}
+
+.text{
+    padding: $pad3;
+    padding-bottom: 0;
+}
+
+.close{
+    margin-left: 50px;
+}
+
+// contact /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#contact{
+    height: 500px;
+    padding: 0;
+    border: none;
+
+    @include query(1152px){
+        height: auto;
+    }
+
+    .overlay2{
+        height: 100%;
+        width: 100%;
+        background-color: rgba(240, 248, 255, 0.7);
+        grid-gap: 50px;
+        @include grid;
+
+        @include query(1152px){
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        @include query(480px){
+            grid-gap: 20px;
+        }
+
+        .contact-grid1{
+            padding-top: 50px;
+            justify-self: right;
+
+            @include query(1152px){
+                justify-self: center;
+            }
+
+            input, textarea{
+                margin: 3px 0;
+                text-decoration: none;
+                width: 400px;
+                resize: none;
+                padding: 10px;
+                border: none;
+
+                @include query(480px){
+                    width: 320px;
+                }
+            }
+            
+            input[type=submit]{
+                width: 420px;
+
+                @include query(480px){
+                    width: 340px;
+                }
+            }
+        }
+        
+        .contact-grid2{
+            padding-top: 50px;
+            justify-self: left;
+            text-align: left;
+
+            @include query(1152px){
+                justify-self: center;
+            }
+
+            i{
+                cursor: pointer;
+            }
+            i:hover, hr{
+                opacity: 0.8;
+            }
+            
+            .hr{
+                border: 1px solid $font-color;
+            }
+        }
+    }
+}
+
+.copy{
+    text-align: center;
+    padding: 30px 0;
+    color: $font-color;
+}
+
+
+
+
