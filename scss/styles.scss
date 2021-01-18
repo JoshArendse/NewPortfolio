@@ -152,7 +152,7 @@ h1{
     }
 }
 
-.parallax1, .parallax2, .parallax3, .parallax4{
+.parallax1, .parallax2, .parallax3, .parallax4, .parallax5{
     height: 70vh;
     background-attachment: fixed;
     background-size: cover;
@@ -164,17 +164,7 @@ h1{
 .parallax2{background-image: url(../img/php.png)}
 .parallax3{background-image: url(../img/wordpress.png)}
 .parallax4{background-image: url(../img/vuejq.jpg)}
-
-.parallax2, .parallax4{
-    @include query(800px){
-        background-size: 960px 540px;
-        background-attachment: scroll;
-    }
-
-    @include query(640px){
-        background-size: 854px 520px;
-    }
-}
+.parallax5{background-image: url(../img/Android.png)}
 
 // projects ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

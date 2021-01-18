@@ -3,11 +3,18 @@
 let switches = document.querySelectorAll('#theme-switch span');
 let root = document.querySelector('body');
 
-switches.forEach((color) => {
-    color.addEventListener('click', (e) => {
-        root.style.setProperty('--theme', e.target.style.backgroundColor);
-    })
-});
+let i = 0;
+
+while(i < switches.length){
+
+  color = switches[i];
+  color.addEventListener('click', function(c){
+    root.style.setProperty('--theme', c.target.style.backgroundColor);
+  })
+  
+  i++;
+
+}
 
 // theme control
 

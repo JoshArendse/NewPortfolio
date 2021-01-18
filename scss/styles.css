@@ -122,7 +122,7 @@ h1 {
   #skillset h2 {
     color: aliceblue; }
 
-.parallax1, .parallax2, .parallax3, .parallax4 {
+.parallax1, .parallax2, .parallax3, .parallax4, .parallax5 {
   height: 70vh;
   background-attachment: fixed;
   background-size: cover;
@@ -141,13 +141,8 @@ h1 {
 .parallax4 {
   background-image: url(../img/vuejq.jpg); }
 
-@media screen and (max-width: 800px) {
-  .parallax2, .parallax4 {
-    background-size: 960px 540px;
-    background-attachment: scroll; } }
-@media screen and (max-width: 640px) {
-  .parallax2, .parallax4 {
-    background-size: 854px 520px; } }
+.parallax5 {
+  background-image: url(../img/Android.png); }
 
 .projects {
   height: 65vh;
