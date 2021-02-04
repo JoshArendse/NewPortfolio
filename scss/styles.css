@@ -62,7 +62,7 @@ h1 {
       font-weight: 400;
       font-size: 18px; }
   #banner #banner-grid2 {
-    background: url(../img/Josh.JPG) no-repeat;
+    background: url(../img/Josh.jpg) no-repeat;
     background-size: cover; }
     @media screen and (max-width: 1152px) {
       #banner #banner-grid2 {
