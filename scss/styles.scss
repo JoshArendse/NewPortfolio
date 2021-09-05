@@ -169,14 +169,14 @@ h1{
 // projects ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .projects{
-    height: 65vh;
+    height: 75vh;
     grid-gap: 20px;
     display: grid;
     padding: $box;
-    grid-template-columns: $layout;
+    grid-template-columns: $layout2;
     transition: $speed2;
 
-    @include query(1152px){
+    @include query(1024px){
         height: 100vh;
         grid-template-columns: 1fr;
     }
@@ -190,7 +190,7 @@ h1{
     }
 }
 
-#page1, #page2, #page3{
+#page1, #page2, #page3, #page4{
     background-size: cover;
     box-shadow: $shadow;
     cursor: pointer;
@@ -198,11 +198,12 @@ h1{
 #page1{background: url(../img/Outbound.PNG) center no-repeat}
 #page2{background: url(../img/wordpress-portfolio.PNG) center no-repeat}
 #page3{background: url(../img/punch.PNG) center no-repeat}
+#page4{background: url(../img/dummy.JPG) center no-repeat}
 
 .active{
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.65);
+    background: rgba(0, 0, 0, 0.5);
     transition: $speed2;
     overflow: hidden;
 }
@@ -213,7 +214,7 @@ h1{
 
 .block {
     padding: 0;
-    height: 80vh;
+    height: 84vh;
     grid-template-columns: 1fr;
 }
 

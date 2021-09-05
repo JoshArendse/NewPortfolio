@@ -91,21 +91,27 @@
     </div>
 
     <div class="projects">
-        <div id="page1" data-aos="fade-up" data-aos-duration="1200">
+        <div id="page1" data-aos-once="true" data-aos="fade-up" data-aos-duration="1200">
             <div class="overlay">
                 <h3 class="text">I was fortunate enough to work on the rebuilding of the DigiOutbound website <br>(Along with 2 other colleagues) in Kentico CMS, <br>and the website is now being used by <a href="https://www.digioutsource.com/" target="_blank">DigiOutsource</a>.</h3><br>
                 <button class="close" id="button">Close</button>
             </div>
         </div>
-        <div id="page2" data-aos="fade-up" data-aos-duration="1500">
+        <div id="page2" data-aos-once="true" data-aos="fade-up" data-aos-duration="1500">
             <div class="overlay">
                 <h3 class="text"> One of my more 'fun' projects to work on, a <a href="https://josh4507.wordpress.com/" target="_blank">Wordpress Portfolio</a><br>I created during some downtime at college. Getting used to the system <br>gave me various ideas for layouts and concepts</h3><br>
                 <button class="close" id="button">Close</button>
             </div>
         </div>
-        <div id="page3" data-aos="fade-up" data-aos-duration="1800">
+        <div id="page3" data-aos-once="true" data-aos="fade-up" data-aos-duration="1800">
             <div class="overlay">
                 <h3 class="text">This mini-game is part of a Vue.js online tutorial ive been <br>self-studying and have made some refinements to it as far <br>as functionality and UX is concnerned to give it a more <a href="https://josharendse.github.io/Punch-Game/index.html" target="_blank">game</a>-like feel.<br> (only works for desktop at the moment, mobile update to follow soon).</h3><br>
+                <button class="close" id="button">Close</button>
+            </div>
+        </div>
+        <div id="page4" data-aos-once="true" data-aos="fade-up" data-aos-duration="2100">
+            <div class="overlay">
+                <h3 class="text">A <a href="https://josharendse.github.io/TechSkills/index.html" target="_blank">dummy site</a> that was created to showcase basic Javascript skills and CSS effects with simplistic elements as a key highlight.</h3><br>
                 <button class="close" id="button">Close</button>
             </div>
         </div>
@@ -148,8 +154,9 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-            var maxWidth = 1079;
+            var maxWidth = 767;
 
+            // disables Aos effect for tablet and mobile
             if(window.innerWidth < maxWidth){
                 AOS.init({
                     disable: true

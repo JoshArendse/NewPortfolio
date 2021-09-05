@@ -94,7 +94,7 @@ h1 {
     #pop-up #theme-switch span {
       width: 100%;
       cursor: pointer;
-      box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.8);
+      box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.7);
       z-index: 2; }
       #pop-up #theme-switch span:active {
         transform: scale(0.9);
@@ -145,13 +145,13 @@ h1 {
   background-image: url(../img/Android.png); }
 
 .projects {
-  height: 65vh;
+  height: 75vh;
   grid-gap: 20px;
   display: grid;
   padding: 50px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   transition: all 300ms ease-in-out; }
-  @media screen and (max-width: 1152px) {
+  @media screen and (max-width: 1024px) {
     .projects {
       height: 100vh;
       grid-template-columns: 1fr; } }
@@ -163,9 +163,9 @@ h1 {
     font-weight: 400;
     font-size: 18px; }
 
-#page1, #page2, #page3 {
+#page1, #page2, #page3, #page4 {
   background-size: cover;
-  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.7);
   cursor: pointer; }
 
 #page1 {
@@ -177,10 +177,13 @@ h1 {
 #page3 {
   background: url(../img/punch.PNG) center no-repeat; }
 
+#page4 {
+  background: url(../img/dummy.JPG) center no-repeat; }
+
 .active {
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.65);
+  background: rgba(0, 0, 0, 0.5);
   transition: all 300ms ease-in-out;
   overflow: hidden; }
 
@@ -189,7 +192,7 @@ h1 {
 
 .block {
   padding: 0;
-  height: 80vh;
+  height: 84vh;
   grid-template-columns: 1fr; }
 
 .show-text {
